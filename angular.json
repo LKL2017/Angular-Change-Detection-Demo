@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "express-has-been-checked"
+    }
+  },
+  "defaultProject": "express-has-been-checked",
+  "cli": {
+    "analytics": false
+  }
 }

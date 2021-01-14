@@ -1,0 +1,13 @@
+<div>Click Show A or Show B will throw <span style="color: #f00">[ExpressionChangedAfterItHasBeenCheckedError]</span> unless you change the way to update prop </div>
+<div class="btn-container">
+  <div class="btn-view" (click)="navigateToA()">Show A</div>
+  <div class="btn-view" (click)="navigateToB()">Show B</div>
+</div>
+<div class="child-container">
+  <div style="margin: 12px; height: 24px;">
+    <ng-container *ngIf="isShow">This will be toggled</ng-container>
+  </div>
+  <div style="padding: 0 20px">
+    <router-outlet></router-outlet>
+  </div>
+</div>
